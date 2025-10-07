@@ -40,18 +40,33 @@ const Recursos = ({ language }: RecursosProps) => {
         items: [
           {
             title: "ColorADD",
-            description: "Sistema universal de identificación de colores",
+            description: "Sistema universal de identificación de colores para daltónicos",
             url: "https://www.coloradd.net/",
           },
           {
-            title: "Tests Online de Daltonismo",
-            description: "Evaluaciones preliminares (no reemplazan diagnóstico profesional)",
-            url: "#",
+            title: "Enchroma - Test de Daltonismo",
+            description: "Test online gratuito e información sobre tipos de daltonismo",
+            url: "https://enchroma.com/pages/color-blindness-test",
           },
           {
-            title: "Asociaciones de Daltonismo",
-            description: "Organizaciones y grupos de apoyo",
-            url: "#",
+            title: "Coblis - Simulador de Daltonismo",
+            description: "Herramienta para ver cómo perciben los colores las personas con daltonismo",
+            url: "https://www.color-blindness.com/coblis-color-blindness-simulator/",
+          },
+          {
+            title: "Colour Blind Awareness",
+            description: "Organización británica con recursos educativos y de concientización",
+            url: "https://www.colourblindawareness.org/",
+          },
+          {
+            title: "National Eye Institute (NEI)",
+            description: "Información médica confiable sobre daltonismo del gobierno de EE.UU.",
+            url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness",
+          },
+          {
+            title: "Fundación de Apoyo al Daltónico",
+            description: "Recursos y apoyo para personas con daltonismo en España",
+            url: "https://www.daltonicos.org/",
           },
         ],
       },
@@ -113,18 +128,33 @@ const Recursos = ({ language }: RecursosProps) => {
         items: [
           {
             title: "ColorADD",
-            description: "Universal color identification system",
+            description: "Universal color identification system for color blind people",
             url: "https://www.coloradd.net/",
           },
           {
-            title: "Online Color Blindness Tests",
-            description: "Preliminary assessments (do not replace professional diagnosis)",
-            url: "#",
+            title: "Enchroma - Color Blindness Test",
+            description: "Free online test and information about color blindness types",
+            url: "https://enchroma.com/pages/color-blindness-test",
           },
           {
-            title: "Color Blindness Associations",
-            description: "Organizations and support groups",
-            url: "#",
+            title: "Coblis - Color Blindness Simulator",
+            description: "Tool to see how color blind people perceive colors",
+            url: "https://www.color-blindness.com/coblis-color-blindness-simulator/",
+          },
+          {
+            title: "Colour Blind Awareness",
+            description: "British organization with educational and awareness resources",
+            url: "https://www.colourblindawareness.org/",
+          },
+          {
+            title: "National Eye Institute (NEI)",
+            description: "Reliable medical information about color blindness from U.S. government",
+            url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness",
+          },
+          {
+            title: "American Academy of Ophthalmology",
+            description: "Professional resources and information about color vision deficiency",
+            url: "https://www.aao.org/eye-health/diseases/what-is-color-blindness",
           },
         ],
       },
