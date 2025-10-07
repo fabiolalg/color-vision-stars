@@ -290,18 +290,19 @@ const ParaNinos = ({ language }: ParaNinosProps) => {
           <SectionCard
             title={t.superhero.title}
             icon={<Trophy className="h-10 w-10 text-secondary fill-secondary" />}
-            className="gradient-accent text-secondary-foreground"
           >
-            <p className="text-xl mb-6">{t.superhero.description}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {t.superhero.powers.map((power, index) => (
-                <div key={index} className="p-4 bg-background/80 rounded-lg">
-                  <p className="font-semibold flex items-start gap-2">
-                    <Sparkles className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
-                    {power}
-                  </p>
-                </div>
-              ))}
+            <div className="p-6 bg-gradient-accent rounded-lg">
+              <p className="text-xl mb-6 font-semibold text-foreground">{t.superhero.description}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {t.superhero.powers.map((power, index) => (
+                  <div key={index} className="p-4 bg-background/90 border border-primary/20 rounded-lg">
+                    <p className="font-semibold flex items-start gap-2 text-foreground">
+                      <Sparkles className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
+                      {power}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </SectionCard>
         </div>

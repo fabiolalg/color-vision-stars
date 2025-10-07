@@ -236,9 +236,9 @@ const ColorADD = ({ language }: ColorADDProps) => {
           >
             <ul className="space-y-3">
               {t.benefits.items.map((benefit, index) => (
-                <li key={index} className="flex items-start gap-3 p-4 bg-gradient-accent text-secondary-foreground rounded-lg">
-                  <Star className="h-6 w-6 flex-shrink-0 fill-secondary-foreground" />
-                  <span className="font-medium text-lg">{benefit}</span>
+                <li key={index} className="flex items-start gap-3 p-4 bg-secondary-light rounded-lg">
+                  <Star className="h-6 w-6 flex-shrink-0 text-secondary fill-secondary" />
+                  <span className="font-medium text-lg text-foreground">{benefit}</span>
                 </li>
               ))}
             </ul>

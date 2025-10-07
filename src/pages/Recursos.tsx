@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import SectionCard from "@/components/SectionCard";
-import { BookOpen, Download, ExternalLink, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { BookOpen, ExternalLink } from "lucide-react";
 
 interface RecursosProps {
   language: 'es' | 'en';
@@ -14,26 +13,9 @@ const Recursos = ({ language }: RecursosProps) => {
         title: "Recursos y Descargas",
         subtitle: "Materiales educativos, guías y herramientas para familias y educadores",
       },
-      downloads: {
-        title: "Guías Descargables",
-        items: [
-          {
-            title: "Guía Completa para Padres (PDF)",
-            description: "Todo lo que necesitas saber sobre el daltonismo infantil",
-          },
-          {
-            title: "Manual de Adaptaciones Escolares (PDF)",
-            description: "Estrategias específicas para maestros y escuelas",
-          },
-          {
-            title: "Libro de Actividades para Niños (PDF)",
-            description: "Actividades divertidas adaptadas para niños con daltonismo",
-          },
-          {
-            title: "Etiquetas ColorADD Imprimibles",
-            description: "Etiquetas listas para imprimir y usar en casa o en clase",
-          },
-        ],
+      quickLinks: {
+        title: "Recursos Principales",
+        subtitle: "Enlaces útiles y herramientas para familias y educadores",
       },
       links: {
         title: "Enlaces Útiles",
@@ -87,41 +69,15 @@ const Recursos = ({ language }: RecursosProps) => {
           },
         ],
       },
-      materials: {
-        title: "Materiales para Educadores",
-        items: [
-          "Plantillas de adaptación de exámenes",
-          "Pósters educativos para el aula",
-          "Presentaciones para capacitación docente",
-          "Lista de verificación de accesibilidad",
-        ],
-      },
     },
     en: {
       hero: {
         title: "Resources and Downloads",
         subtitle: "Educational materials, guides, and tools for families and educators",
       },
-      downloads: {
-        title: "Downloadable Guides",
-        items: [
-          {
-            title: "Complete Parents' Guide (PDF)",
-            description: "Everything you need to know about childhood color blindness",
-          },
-          {
-            title: "School Adaptations Manual (PDF)",
-            description: "Specific strategies for teachers and schools",
-          },
-          {
-            title: "Children's Activity Book (PDF)",
-            description: "Fun activities adapted for children with color blindness",
-          },
-          {
-            title: "Printable ColorADD Labels",
-            description: "Ready-to-print labels for home or classroom use",
-          },
-        ],
+      quickLinks: {
+        title: "Main Resources",
+        subtitle: "Useful links and tools for families and educators",
       },
       links: {
         title: "Useful Links",
@@ -175,15 +131,6 @@ const Recursos = ({ language }: RecursosProps) => {
           },
         ],
       },
-      materials: {
-        title: "Materials for Educators",
-        items: [
-          "Test adaptation templates",
-          "Educational classroom posters",
-          "Teacher training presentations",
-          "Accessibility checklist",
-        ],
-      },
     },
   };
 
@@ -198,50 +145,33 @@ const Recursos = ({ language }: RecursosProps) => {
       />
 
       <div className="container mx-auto px-4 py-12">
-        <div className="max-w-5xl mx-auto space-y-12">
-          {/* Downloadable Guides */}
-          <SectionCard
-            title={t.downloads.title}
-            icon={<Download className="h-10 w-10 text-primary" />}
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {t.downloads.items.map((item, index) => (
-                <div key={index} className="p-6 border rounded-lg hover:shadow-md transition-smooth">
-                  <FileText className="h-8 w-8 text-secondary mb-3" />
-                  <h4 className="font-bold text-lg mb-2">{item.title}</h4>
-                  <p className="text-muted-foreground mb-4 text-sm">{item.description}</p>
-                  <Button variant="outline" className="w-full">
-                    <Download className="h-4 w-4 mr-2" />
-                    {language === 'es' ? 'Descargar' : 'Download'}
-                  </Button>
-                </div>
-              ))}
-            </div>
-          </SectionCard>
+        <div className="max-w-4xl mx-auto space-y-12">
+          {/* Quick Access Section */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-3">{t.quickLinks.title}</h2>
+            <p className="text-muted-foreground text-lg">{t.quickLinks.subtitle}</p>
+          </div>
 
-          {/* Useful Links */}
-          <SectionCard
-            title={t.links.title}
-            icon={<ExternalLink className="h-10 w-10 text-primary" />}
-          >
-            <div className="space-y-4">
-              {t.links.items.map((link, index) => (
-                <div key={index} className="p-6 border rounded-lg hover:shadow-md transition-smooth">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h4 className="font-bold text-lg mb-2">{link.title}</h4>
-                      <p className="text-muted-foreground text-sm">{link.description}</p>
-                    </div>
-                    <Button variant="ghost" size="icon" asChild>
-                      <a href={link.url} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-5 w-5" />
-                      </a>
-                    </Button>
+          {/* Main Resource Links */}
+          <div className="space-y-4">
+            {t.links.items.map((link, index) => (
+              <a 
+                key={index} 
+                href={link.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block p-6 border-2 border-primary/20 rounded-lg hover:border-primary hover:shadow-lg transition-smooth bg-card"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl mb-2 text-primary">{link.title}</h3>
+                    <p className="text-muted-foreground">{link.description}</p>
                   </div>
+                  <ExternalLink className="h-6 w-6 text-primary flex-shrink-0" />
                 </div>
-              ))}
-            </div>
-          </SectionCard>
+              </a>
+            ))}
+          </div>
 
           {/* Mobile Apps */}
           <SectionCard
@@ -250,27 +180,10 @@ const Recursos = ({ language }: RecursosProps) => {
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {t.apps.items.map((app, index) => (
-                <div key={index} className="p-6 bg-gradient-card border rounded-lg text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl">📱</span>
-                  </div>
+                <div key={index} className="p-6 bg-gradient-card border-2 border-primary/10 rounded-lg text-center hover:border-primary/30 transition-smooth">
+                  <div className="text-5xl mb-4">📱</div>
                   <h4 className="font-bold text-lg mb-2">{app.name}</h4>
                   <p className="text-muted-foreground text-sm">{app.description}</p>
-                </div>
-              ))}
-            </div>
-          </SectionCard>
-
-          {/* Materials for Educators */}
-          <SectionCard
-            title={t.materials.title}
-            icon={<FileText className="h-10 w-10 text-primary" />}
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {t.materials.items.map((material, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-primary-light/20 rounded-lg">
-                  <Download className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="font-medium">{material}</span>
                 </div>
               ))}
             </div>
