@@ -19,14 +19,12 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
     { path: "/para-escuelas", label: "Para Escuelas" },
     { path: "/para-ninos", label: "Para Niños" },
     { path: "/recursos", label: "Recursos" },
-    { path: "/coloradd", label: "ColorADD" },
   ] : [
     { path: "/", label: "Home" },
     { path: "/para-padres", label: "For Parents" },
     { path: "/para-escuelas", label: "For Schools" },
     { path: "/para-ninos", label: "For Children" },
     { path: "/recursos", label: "Resources" },
-    { path: "/coloradd", label: "ColorADD" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

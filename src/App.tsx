@@ -11,7 +11,6 @@ import ParaPadres from "./pages/ParaPadres";
 import ParaEscuelas from "./pages/ParaEscuelas";
 import ParaNinos from "./pages/ParaNinos";
 import Recursos from "./pages/Recursos";
-import ColorADD from "./pages/ColorADD";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,9 +37,9 @@ const App = () => {
                 <Route path="/para-escuelas" element={<ParaEscuelas language={language} />} />
                 <Route path="/para-ninos" element={<ParaNinos language={language} />} />
                 <Route path="/recursos" element={<Recursos language={language} />} />
-                <Route path="/coloradd" element={<ColorADD language={language} />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
+
             </main>
             <Footer language={language} />
           </div>
