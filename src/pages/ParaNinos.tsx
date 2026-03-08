@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import SectionCard from "@/components/SectionCard";
-import { Heart, Star, Glasses, Smile, Trophy, Sparkles } from "lucide-react";
+import ColorBlindnessTest from "@/components/ColorBlindnessTest";
+import { Heart, Star, Glasses, Smile, Trophy, Sparkles, Eye } from "lucide-react";
 
 interface ParaNinosProps {
   language: 'es' | 'en';
