@@ -29,6 +29,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <div className="min-h-screen flex flex-col">
             <Navigation language={language} onLanguageToggle={toggleLanguage} />
             <main className="flex-1">
