@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 interface SectionCardProps {
   title: string;
@@ -11,22 +11,24 @@ interface SectionCardProps {
 
 const SectionCard = ({ title, description, icon, children, className = "" }: SectionCardProps) => {
   return (
-    <Card className={`gradient-card shadow-elegant transition-smooth hover:shadow-lg hover:scale-[1.02] ${className}`}>
-      <CardHeader>
-        {icon && (
-          <div className="mb-4 flex justify-center md:justify-start">
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className={`rounded-2xl border bg-card text-card-foreground p-8 shadow-elegant transition-smooth hover:shadow-lg hover:-translate-y-1 ${className}`}
+    >
+      {icon && (
+        <div className="mb-5 flex justify-center md:justify-start">
+          <div className="p-3 rounded-xl bg-accent">
             {icon}
           </div>
-        )}
-        <CardTitle className="text-2xl">{title}</CardTitle>
-        {description && <CardDescription className="text-base">{description}</CardDescription>}
-      </CardHeader>
-      {children && (
-        <CardContent>
-          {children}
-        </CardContent>
+        </div>
       )}
-    </Card>
+      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      {description && <p className="text-muted-foreground leading-relaxed">{description}</p>}
+      {children && <div className="mt-5">{children}</div>}
+    </motion.div>
   );
 };
 
