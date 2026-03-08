@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface HeroSectionProps {
   title: string;
@@ -9,26 +10,52 @@ interface HeroSectionProps {
 
 const HeroSection = ({ title, subtitle, children, icon }: HeroSectionProps) => {
   return (
-    <section className="gradient-hero text-primary-foreground py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
+    <section className="relative gradient-hero text-primary-foreground py-20 md:py-28 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 pattern-dots opacity-30" />
+      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary-foreground/5 blur-3xl" />
+      <div className="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-secondary/10 blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-3xl mx-auto text-center">
           {icon && (
-            <div className="flex justify-center mb-6">
-              {icon}
-            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="flex justify-center mb-8"
+            >
+              <div className="p-5 rounded-2xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/10">
+                {icon}
+              </div>
+            </motion.div>
           )}
-          <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mb-6 leading-[1.1]"
+          >
             {title}
-          </h1>
+          </motion.h1>
           {subtitle && (
-            <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="text-lg md:text-xl mb-10 text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed"
+            >
               {subtitle}
-            </p>
+            </motion.p>
           )}
           {children && (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               {children}
-            </div>
+            </motion.div>
           )}
         </div>
       </div>
