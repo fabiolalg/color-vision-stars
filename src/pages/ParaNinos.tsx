@@ -214,6 +214,9 @@ const ParaNinos = ({ language }: ParaNinosProps) => {
             </div>
           </SectionCard>
 
+          {/* Interactive Color Test */}
+          <ColorBlindnessTest language={language} />
+
           {/* Famous People */}
           <SectionCard
             title={t.famous.title}
