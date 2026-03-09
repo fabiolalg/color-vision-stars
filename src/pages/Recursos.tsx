@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import SectionCard from "@/components/SectionCard";
-import { BookOpen, ExternalLink, Palette, Info, Star, Globe } from "lucide-react";
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { BookOpen, ExternalLink } from "lucide-react";
 
 interface RecursosProps {
   language: 'es' | 'en';
