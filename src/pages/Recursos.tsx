@@ -27,9 +27,15 @@ const Recursos = ({ language }: RecursosProps) => {
             url: "https://www.coloradd.net/",
           },
           {
-            title: "Enchroma - Test de Daltonismo",
+            title: "Test Enchroma para Niños (5-10 años)",
+            description: "Test online gratuito usando figuras, no números — ideal para niños pequeños",
+            note: "Orientativo, no diagnóstico clínico",
+            url: "https://enchroma.com/en-eu/pages/kids-color-blind-test",
+          },
+          {
+            title: "Test Enchroma para Adultos (+10 años)",
             description: "Test online gratuito e información sobre tipos de daltonismo",
-            note: "Test orientativo, no diagnóstico clínico",
+            note: "Orientativo, no diagnóstico clínico",
             url: "https://enchroma.com/pages/color-blindness-test",
           },
           {
@@ -72,70 +78,6 @@ const Recursos = ({ language }: RecursosProps) => {
           },
         ],
       },
-      colorADD: {
-        intro: {
-          title: "¿Qué es ColorADD?",
-          description: "ColorADD es un sistema de identificación de colores basado en símbolos gráficos que permite a las personas con daltonismo identificar colores de manera independiente. Fue creado en Portugal y se está implementando en todo el mundo.",
-        },
-        basics: {
-          title: "Colores Primarios Básicos",
-          description: "El sistema se basa en tres símbolos básicos para los colores primarios:",
-          colors: [
-            { name: "Amarillo", symbol: "▲", description: "Triángulo" },
-            { name: "Rojo", symbol: "■", description: "Cuadrado" },
-            { name: "Azul", symbol: "●", description: "Círculo" },
-          ],
-        },
-        secondary: {
-          title: "Colores Secundarios",
-          description: "Los colores secundarios se forman combinando los símbolos primarios:",
-          combinations: [
-            "Verde = Amarillo (▲) + Azul (●)",
-            "Naranja = Amarillo (▲) + Rojo (■)",
-            "Morado = Rojo (■) + Azul (●)",
-          ],
-        },
-        special: {
-          title: "Casos Especiales",
-          colors: [
-            { name: "Blanco", description: "Símbolo vacío o sin relleno" },
-            { name: "Negro", description: "Símbolo completamente relleno" },
-            { name: "Gris", description: "Punto central" },
-          ],
-        },
-        applications: {
-          title: "¿Dónde se Usa ColorADD?",
-          description: "El sistema ColorADD se está implementando en:",
-          areas: [
-            "Transporte público (metro, autobuses)",
-            "Hospitales y farmacias",
-            "Escuelas y universidades",
-            "Productos de consumo",
-            "Señalización urbana",
-            "Industria textil (etiquetas de ropa)",
-          ],
-        },
-        benefits: {
-          title: "Beneficios del Sistema",
-          items: [
-            "Universal y fácil de aprender",
-            "No requiere tecnología",
-            "Funciona para todos los tipos de daltonismo",
-            "Promueve la inclusión y autonomía",
-            "Reconocido internacionalmente",
-          ],
-        },
-        learn: {
-          title: "¿Cómo Aprender ColorADD?",
-          steps: [
-            "Memoriza los tres símbolos básicos (triángulo, cuadrado, círculo)",
-            "Practica identificar combinaciones de símbolos",
-            "Usa etiquetas ColorADD en objetos de uso diario",
-            "Descarga la app oficial ColorADD",
-            "Comparte el sistema con familia y amigos",
-          ],
-        },
-      }
     },
     en: {
       hero: {
@@ -155,7 +97,13 @@ const Recursos = ({ language }: RecursosProps) => {
             url: "https://www.coloradd.net/",
           },
           {
-            title: "Enchroma - Color Blindness Test",
+            title: "Enchroma Test for Kids (5-10 years)",
+            description: "Free online test using shapes, not numbers — ideal for young children",
+            note: "Guidance test, not a clinical diagnosis",
+            url: "https://enchroma.com/en-eu/pages/kids-color-blind-test",
+          },
+          {
+            title: "Enchroma Test for Adults (10+ years)",
             description: "Free online test and information about color blindness types",
             note: "Guidance test, not a clinical diagnosis",
             url: "https://enchroma.com/pages/color-blindness-test",
@@ -200,70 +148,6 @@ const Recursos = ({ language }: RecursosProps) => {
           },
         ],
       },
-      colorADD: {
-        intro: {
-          title: "What is ColorADD?",
-          description: "ColorADD is a color identification system based on graphic symbols that allows people with color blindness to identify colors independently. It was created in Portugal and is being implemented worldwide.",
-        },
-        basics: {
-          title: "Basic Primary Colors",
-          description: "The system is based on three basic symbols for primary colors:",
-          colors: [
-            { name: "Yellow", symbol: "▲", description: "Triangle" },
-            { name: "Red", symbol: "■", description: "Square" },
-            { name: "Blue", symbol: "●", description: "Circle" },
-          ],
-        },
-        secondary: {
-          title: "Secondary Colors",
-          description: "Secondary colors are formed by combining primary symbols:",
-          combinations: [
-            "Green = Yellow (▲) + Blue (●)",
-            "Orange = Yellow (▲) + Red (■)",
-            "Purple = Red (■) + Blue (●)",
-          ],
-        },
-        special: {
-          title: "Special Cases",
-          colors: [
-            { name: "White", description: "Empty or unfilled symbol" },
-            { name: "Black", description: "Completely filled symbol" },
-            { name: "Gray", description: "Center point" },
-          ],
-        },
-        applications: {
-          title: "Where is ColorADD Used?",
-          description: "The ColorADD system is being implemented in:",
-          areas: [
-            "Public transportation (metro, buses)",
-            "Hospitals and pharmacies",
-            "Schools and universities",
-            "Consumer products",
-            "Urban signage",
-            "Textile industry (clothing labels)",
-          ],
-        },
-        benefits: {
-          title: "System Benefits",
-          items: [
-            "Universal and easy to learn",
-            "Doesn't require technology",
-            "Works for all types of color blindness",
-            "Promotes inclusion and autonomy",
-            "Internationally recognized",
-          ],
-        },
-        learn: {
-          title: "How to Learn ColorADD?",
-          steps: [
-            "Memorize the three basic symbols (triangle, square, circle)",
-            "Practice identifying symbol combinations",
-            "Use ColorADD labels on everyday objects",
-            "Download the official ColorADD app",
-            "Share the system with family and friends",
-          ],
-        },
-      }
     },
   };
 
