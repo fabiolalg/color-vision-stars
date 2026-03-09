@@ -55,14 +55,20 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             name: "Color Blind Pal",
             description: "Identifica colores usando la cámara del teléfono",
+            appStore: "https://apps.apple.com/app/color-blind-pal/id1037744228",
+            playStore: "https://play.google.com/store/apps/details?id=com.colorblindpal.app",
           },
           {
             name: "ColorVisor",
             description: "Asistente visual con filtros personalizables",
+            appStore: "https://apps.apple.com/app/colorvisor/id6476592702",
+            playStore: null,
           },
           {
             name: "Chromatic Vision Simulator",
             description: "Simula cómo ve una persona con daltonismo",
+            appStore: "https://apps.apple.com/app/chromatic-vision-simulator/id389310222",
+            playStore: "https://play.google.com/store/apps/details?id=asada0.android.cvsimulator",
           },
         ],
       },
@@ -177,14 +183,20 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             name: "Color Blind Pal",
             description: "Identifies colors using phone camera",
+            appStore: "https://apps.apple.com/app/color-blind-pal/id1037744228",
+            playStore: "https://play.google.com/store/apps/details?id=com.colorblindpal.app",
           },
           {
             name: "ColorVisor",
             description: "Visual assistant with customizable filters",
+            appStore: "https://apps.apple.com/app/colorvisor/id6476592702",
+            playStore: null,
           },
           {
             name: "Chromatic Vision Simulator",
             description: "Simulates how a color blind person sees",
+            appStore: "https://apps.apple.com/app/chromatic-vision-simulator/id389310222",
+            playStore: "https://play.google.com/store/apps/details?id=asada0.android.cvsimulator",
           },
         ],
       },
@@ -307,7 +319,19 @@ const Recursos = ({ language }: RecursosProps) => {
                 <div key={index} className="p-6 bg-gradient-card border-2 border-primary/10 rounded-lg text-center hover:border-primary/30 transition-smooth">
                   <div className="text-5xl mb-4">📱</div>
                   <h4 className="font-bold text-lg mb-2">{app.name}</h4>
-                  <p className="text-muted-foreground text-sm">{app.description}</p>
+                  <p className="text-muted-foreground text-sm mb-4">{app.description}</p>
+                  <div className="flex justify-center gap-3">
+                    {app.appStore && (
+                      <a href={app.appStore} target="_blank" rel="noopener noreferrer" className="text-xs px-3 py-1.5 bg-primary/10 text-primary rounded-full hover:bg-primary/20 transition-smooth font-medium">
+                        🍎 App Store
+                      </a>
+                    )}
+                    {app.playStore && (
+                      <a href={app.playStore} target="_blank" rel="noopener noreferrer" className="text-xs px-3 py-1.5 bg-primary/10 text-primary rounded-full hover:bg-primary/20 transition-smooth font-medium">
+                        🤖 Google Play
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
