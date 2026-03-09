@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Eye, Languages } from "lucide-react";
+import { Menu, X, Eye } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 interface NavigationProps {
@@ -58,10 +58,10 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
               variant="outline"
               size="icon"
               onClick={onLanguageToggle}
-              className="ml-2 transition-smooth"
+              className="ml-2 transition-smooth text-lg"
               title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
             >
-              <Languages className="h-4 w-4" />
+              {language === 'es' ? '🇬🇧' : '🇪🇸'}
             </Button>
           </div>
 
@@ -71,9 +71,10 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
               variant="outline"
               size="icon"
               onClick={onLanguageToggle}
+              className="text-lg"
               title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
             >
-              <Languages className="h-4 w-4" />
+              {language === 'es' ? '🇬🇧' : '🇪🇸'}
             </Button>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>

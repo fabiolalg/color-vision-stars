@@ -56,22 +56,17 @@ const Footer = ({ language }: FooterProps) => {
                   {language === 'es' ? 'Para Niños' : 'For Children'}
                 </Link>
               </li>
-              <li>
-                <Link to="/coloradd" className="text-muted-foreground hover:text-primary transition-smooth">
-                  ColorADD
-                </Link>
-              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-bold text-lg mb-4">{t.contact}</h3>
             <a 
-              href="mailto:info@guiadaltonismo.com" 
+              href="mailto:Fabiola.lopina+daltonismo@gmail.com" 
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-smooth text-sm"
             >
               <Mail className="h-4 w-4" />
-              info@guiadaltonismo.com
+              Fabiola.lopina+daltonismo@gmail.com
             </a>
           </div>
         </div>
