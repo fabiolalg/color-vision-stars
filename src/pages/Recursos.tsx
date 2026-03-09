@@ -287,6 +287,9 @@ const Recursos = ({ language }: RecursosProps) => {
                   <div className="flex-1">
                     <h3 className="font-bold text-xl mb-2 text-primary">{link.title}</h3>
                     <p className="text-muted-foreground">{link.description}</p>
+                    {'note' in link && link.note && (
+                      <p className="text-sm italic text-muted-foreground/70 mt-1">{link.note}</p>
+                    )}
                   </div>
                   <ExternalLink className="h-6 w-6 text-primary flex-shrink-0" />
                 </div>
