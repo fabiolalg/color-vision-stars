@@ -61,7 +61,7 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
               className="ml-2 transition-smooth text-lg"
               title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
             >
-              {language === 'es' ? '🇬🇧' : '🇪🇸'}
+              {language === 'es' ? '🇪🇸' : '🇬🇧'}
             </Button>
           </div>
 
@@ -74,7 +74,7 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
               className="text-lg"
               title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
             >
-              {language === 'es' ? '🇬🇧' : '🇪🇸'}
+              {language === 'es' ? '🇪🇸' : '🇬🇧'}
             </Button>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
