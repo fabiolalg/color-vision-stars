@@ -29,17 +29,13 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "Enchroma - Test de Daltonismo",
             description: "Test online gratuito e información sobre tipos de daltonismo",
+            note: "Test orientativo, no diagnóstico clínico",
             url: "https://enchroma.com/pages/color-blindness-test",
           },
           {
             title: "Coblis - Simulador de Daltonismo",
             description: "Herramienta para ver cómo perciben los colores las personas con daltonismo",
             url: "https://www.color-blindness.com/coblis-color-blindness-simulator/",
-          },
-          {
-            title: "Colour Blind Awareness",
-            description: "Organización británica con recursos educativos y de concientización",
-            url: "https://www.colourblindawareness.org/",
           },
           {
             title: "National Eye Institute (NEI)",
@@ -155,17 +151,13 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "Enchroma - Color Blindness Test",
             description: "Free online test and information about color blindness types",
+            note: "Guidance test, not a clinical diagnosis",
             url: "https://enchroma.com/pages/color-blindness-test",
           },
           {
             title: "Coblis - Color Blindness Simulator",
             description: "Tool to see how color blind people perceive colors",
             url: "https://www.color-blindness.com/coblis-color-blindness-simulator/",
-          },
-          {
-            title: "Colour Blind Awareness",
-            description: "British organization with educational and awareness resources",
-            url: "https://www.colourblindawareness.org/",
           },
           {
             title: "National Eye Institute (NEI)",
