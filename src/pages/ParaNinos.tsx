@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import SectionCard from "@/components/SectionCard";
-import ColorBlindnessTest from "@/components/ColorBlindnessTest";
-import { Heart, Star, Glasses, Smile, Trophy, Sparkles, Eye } from "lucide-react";
+import { Heart, Star, Glasses, Smile, Trophy, Sparkles } from "lucide-react";
 
 interface ParaNinosProps {
   language: 'es' | 'en';
@@ -213,9 +212,6 @@ const ParaNinos = ({ language }: ParaNinosProps) => {
               ))}
             </div>
           </SectionCard>
-
-          {/* Interactive Color Test */}
-          <ColorBlindnessTest language={language} />
 
           {/* Famous People */}
           <SectionCard
