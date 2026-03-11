@@ -45,7 +45,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "National Eye Institute (NEI)",
             description: "Información médica confiable sobre daltonismo del gobierno de EE.UU.",
-            url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness",
+            url: "https://www.nei.nih.gov/espanol/informacion-sobre-la-salud-ocular/enfermedades-y-afecciones-de-los-ojos/daltonismo",
           },
           {
             title: "Fundación de Apoyo al Daltónico",
