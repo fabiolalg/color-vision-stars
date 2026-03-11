@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import NextSection from "@/components/NextSection";
 import SectionCard from "@/components/SectionCard";
 import { School, BookOpen, Users, ClipboardList, Lightbulb } from "lucide-react";
 
