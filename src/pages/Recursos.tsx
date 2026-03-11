@@ -23,7 +23,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "ColorADD",
             description: "Sistema universal de identificación de colores para daltónicos",
-            url: "https://www.coloradd.net/",
+            url: "https://www.coloradd.net/es",
           },
           {
             title: "Test Enchroma para Niños (5-10 años)",
