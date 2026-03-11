@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NextSection from "@/components/NextSection";
 import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/HeroSection";
 import SectionCard from "@/components/SectionCard";
@@ -255,6 +256,7 @@ const Home = ({ language }: HomeProps) => {
           </div>
         </div>
       </section>
+      <NextSection language={language} currentPath="/" />
     </div>
   );
 };

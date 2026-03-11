@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import NextSection from "@/components/NextSection";
 import SectionCard from "@/components/SectionCard";
 import { Heart, Star, Glasses, Smile, Trophy, Sparkles } from "lucide-react";
 
@@ -307,6 +308,7 @@ const ParaNinos = ({ language }: ParaNinosProps) => {
           </SectionCard>
         </div>
       </div>
+      <NextSection language={language} currentPath="/para-ninos" />
     </div>
   );
 };

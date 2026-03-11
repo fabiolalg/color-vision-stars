@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import NextSection from "@/components/NextSection";
 import SectionCard from "@/components/SectionCard";
 import { Users, Eye, Heart, Home, TestTube, AlertCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -285,6 +286,7 @@ const ParaPadres = ({ language }: ParaPadresProps) => {
           </SectionCard>
         </div>
       </div>
+      <NextSection language={language} currentPath="/para-padres" />
     </div>
   );
 };
