@@ -115,7 +115,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "National Eye Institute (NEI)",
             description: "Reliable medical information about color blindness from U.S. government",
-            url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness",
+            url: "https://www.nei.nih.gov/eye-health/color-blindness",
           },
           {
             title: "American Academy of Ophthalmology",

@@ -39,7 +39,7 @@ const Footer = ({ language }: FooterProps) => {
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.resources}</h3>
+            <h3 className="text-lg mb-4">{t.sections}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/para-padres" className="text-muted-foreground hover:text-primary transition-smooth">
