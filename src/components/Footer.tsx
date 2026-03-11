@@ -11,15 +11,15 @@ const Footer = ({ language }: FooterProps) => {
       madeWith: "Hecho con",
       forFamilies: "para familias y educadores",
       contact: "Contacto",
-      resources: "Recursos",
-      about: "Acerca de",
+      sections: "Secciones principales",
+      about: "Sobre esta guía",
     },
     en: {
       madeWith: "Made with",
       forFamilies: "for families and educators",
       contact: "Contact",
-      resources: "Resources",
-      about: "About",
+      sections: "Main sections",
+      about: "About this guide",
     },
   };
 
