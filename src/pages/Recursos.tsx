@@ -48,9 +48,9 @@ const Recursos = ({ language }: RecursosProps) => {
             url: "https://www.nei.nih.gov/espanol/informacion-sobre-la-salud-ocular/enfermedades-y-afecciones-de-los-ojos/daltonismo",
           },
           {
-            title: "Fundación de Apoyo al Daltónico",
-            description: "Recursos y apoyo para personas con daltonismo en España",
-            url: "https://www.daltonicos.org/",
+            title: "Acromates — Asociación Española de Acromatopsia",
+            description: "Asociación española activa para daltónicos y familias — recursos, apoyo y comunidad",
+            url: "https://acromates.org",
           },
         ],
       },
