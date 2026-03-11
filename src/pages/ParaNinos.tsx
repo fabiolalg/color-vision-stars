@@ -308,6 +308,7 @@ const ParaNinos = ({ language }: ParaNinosProps) => {
           </SectionCard>
         </div>
       </div>
+      <NextSection language={language} currentPath="/para-ninos" />
     </div>
   );
 };

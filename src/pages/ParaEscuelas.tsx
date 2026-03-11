@@ -280,6 +280,7 @@ const ParaEscuelas = ({ language }: ParaEscuelasProps) => {
           </div>
         </div>
       </div>
+      <NextSection language={language} currentPath="/para-escuelas" />
     </div>
   );
 };

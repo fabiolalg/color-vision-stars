@@ -256,6 +256,7 @@ const Home = ({ language }: HomeProps) => {
           </div>
         </div>
       </section>
+      <NextSection language={language} currentPath="/" />
     </div>
   );
 };

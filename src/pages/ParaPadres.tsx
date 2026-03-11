@@ -286,6 +286,7 @@ const ParaPadres = ({ language }: ParaPadresProps) => {
           </SectionCard>
         </div>
       </div>
+      <NextSection language={language} currentPath="/para-padres" />
     </div>
   );
 };

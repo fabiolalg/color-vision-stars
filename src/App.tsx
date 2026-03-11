@@ -33,6 +33,7 @@ const App = () => {
           <ScrollToTop />
           <div className="min-h-screen flex flex-col">
             <Navigation language={language} onLanguageToggle={toggleLanguage} />
+            <Breadcrumbs language={language} />
             <main className="flex-1">
               <Routes>
                 <Route path="/" element={<Home language={language} />} />
