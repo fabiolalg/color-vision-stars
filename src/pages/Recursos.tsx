@@ -93,7 +93,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "ColorADD",
             description: "Universal color identification system for color blind people",
-            url: "https://www.coloradd.net/",
+            url: "https://www.coloradd.net/en",
           },
           {
             title: "Enchroma Test for Kids (5-10 years)",
