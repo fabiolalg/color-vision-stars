@@ -30,7 +30,7 @@ const Footer = ({ language }: FooterProps) => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.about}</h3>
+            <h3 className="text-lg mb-4">{t.about}</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {language === 'es' 
                 ? 'Una guía completa sobre daltonismo infantil para padres, escuelas y niños.'
