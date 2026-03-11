@@ -60,7 +60,7 @@ const Footer = ({ language }: FooterProps) => {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.contact}</h3>
+            <h3 className="text-lg mb-4">{t.contact}</h3>
             <a 
               href="mailto:Fabiola.lopina+daltonismo@gmail.com" 
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-smooth text-sm"
