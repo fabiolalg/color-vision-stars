@@ -11,15 +11,15 @@ const Footer = ({ language }: FooterProps) => {
       madeWith: "Hecho con",
       forFamilies: "para familias y educadores",
       contact: "Contacto",
-      resources: "Recursos",
-      about: "Acerca de",
+      sections: "Secciones principales",
+      about: "Sobre esta guía",
     },
     en: {
       madeWith: "Made with",
       forFamilies: "for families and educators",
       contact: "Contact",
-      resources: "Resources",
-      about: "About",
+      sections: "Main sections",
+      about: "About this guide",
     },
   };
 
@@ -30,7 +30,7 @@ const Footer = ({ language }: FooterProps) => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.about}</h3>
+            <h3 className="text-lg mb-4">{t.about}</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {language === 'es' 
                 ? 'Una guía completa sobre daltonismo infantil para padres, escuelas y niños.'
@@ -39,7 +39,7 @@ const Footer = ({ language }: FooterProps) => {
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.resources}</h3>
+            <h3 className="text-lg mb-4">{t.sections}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/para-padres" className="text-muted-foreground hover:text-primary transition-smooth">
@@ -60,7 +60,7 @@ const Footer = ({ language }: FooterProps) => {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.contact}</h3>
+            <h3 className="text-lg mb-4">{t.contact}</h3>
             <a 
               href="mailto:Fabiola.lopina+daltonismo@gmail.com" 
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-smooth text-sm"

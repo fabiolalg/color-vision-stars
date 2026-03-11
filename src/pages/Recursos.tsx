@@ -23,7 +23,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "ColorADD",
             description: "Sistema universal de identificación de colores para daltónicos",
-            url: "https://www.coloradd.net/",
+            url: "https://www.coloradd.net/es",
           },
           {
             title: "Test Enchroma para Niños (5-10 años)",
@@ -45,7 +45,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "National Eye Institute (NEI)",
             description: "Información médica confiable sobre daltonismo del gobierno de EE.UU.",
-            url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness",
+            url: "https://www.nei.nih.gov/espanol/informacion-sobre-la-salud-ocular/enfermedades-y-afecciones-de-los-ojos/daltonismo",
           },
           {
             title: "Fundación de Apoyo al Daltónico",
@@ -93,7 +93,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "ColorADD",
             description: "Universal color identification system for color blind people",
-            url: "https://www.coloradd.net/",
+            url: "https://www.coloradd.net/en",
           },
           {
             title: "Enchroma Test for Kids (5-10 years)",
@@ -115,7 +115,7 @@ const Recursos = ({ language }: RecursosProps) => {
           {
             title: "National Eye Institute (NEI)",
             description: "Reliable medical information about color blindness from U.S. government",
-            url: "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness",
+            url: "https://www.nei.nih.gov/eye-health/color-blindness",
           },
           {
             title: "American Academy of Ophthalmology",
