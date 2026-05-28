@@ -29,6 +29,11 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const langLabel = language === 'es' ? 'Switch to English' : 'Cambiar a Español';
+  const menuLabel = isOpen
+    ? (language === 'es' ? 'Cerrar menú' : 'Close menu')
+    : (language === 'es' ? 'Abrir menú' : 'Open menu');
+
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-sm">
       <div className="container mx-auto px-4">
@@ -59,7 +64,8 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
               size="icon"
               onClick={onLanguageToggle}
               className="ml-2 transition-smooth text-lg"
-              title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+              title={langLabel}
+              aria-label={langLabel}
             >
               {language === 'es' ? '🇪🇸' : '🇬🇧'}
             </Button>
@@ -72,13 +78,14 @@ const Navigation = ({ language, onLanguageToggle }: NavigationProps) => {
               size="icon"
               onClick={onLanguageToggle}
               className="text-lg"
-              title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+              title={langLabel}
+              aria-label={langLabel}
             >
               {language === 'es' ? '🇪🇸' : '🇬🇧'}
             </Button>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
+                <Button variant="outline" size="icon" aria-label={menuLabel}>
                   {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
                 </Button>
               </SheetTrigger>

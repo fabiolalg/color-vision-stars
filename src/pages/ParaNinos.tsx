@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import NextSection from "@/components/NextSection";
+import SEO from "@/components/SEO";
 import SectionCard from "@/components/SectionCard";
 import { Heart, Star, Glasses, Smile, Trophy, Sparkles } from "lucide-react";
 
@@ -191,6 +192,11 @@ const ParaNinos = ({ language }: ParaNinosProps) => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title={language === 'es' ? 'Para Niños — Tu Visión Especial' : 'For Children — Your Special Vision'}
+        description={language === 'es' ? 'Contenido amigable para niños con daltonismo: trucos, datos y por qué tu forma de ver es genial.' : 'Kid-friendly content about color blindness: tips, facts and why your way of seeing is awesome.'}
+        path="/para-ninos"
+      />
       <HeroSection 
         title={t.hero.title} 
         subtitle={t.hero.subtitle}

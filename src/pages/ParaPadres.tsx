@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import NextSection from "@/components/NextSection";
+import SEO from "@/components/SEO";
 import SectionCard from "@/components/SectionCard";
 import { Users, Eye, Heart, Home, TestTube, AlertCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -176,6 +177,19 @@ const ParaPadres = ({ language }: ParaPadresProps) => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title={language === 'es' ? 'Para Padres — Guía sobre Daltonismo Infantil' : 'For Parents — Color Blindness Guide'}
+        description={language === 'es' ? 'Cómo detectar, entender y apoyar a tu hijo con daltonismo: tipos, señales y consejos prácticos.' : 'How to detect, understand and support your color blind child: types, signs and practical tips.'}
+        path="/para-padres"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: language === 'es' ? 'Guía para Padres sobre Daltonismo Infantil' : "Parents' Guide to Childhood Color Blindness",
+          inLanguage: language,
+          author: { "@type": "Organization", name: "Guía Daltonismo Infantil" },
+        }}
+      />
       <HeroSection 
         title={t.hero.title} 
         subtitle={t.hero.subtitle}

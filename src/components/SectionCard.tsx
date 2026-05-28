@@ -25,7 +25,7 @@ const SectionCard = ({ title, description, icon, children, className = "" }: Sec
           </div>
         </div>
       )}
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <h2 className="text-xl font-bold mb-2">{title}</h2>
       {description && <p className="text-muted-foreground leading-relaxed">{description}</p>}
       {children && <div className="mt-5">{children}</div>}
     </motion.div>
