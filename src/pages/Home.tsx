@@ -137,8 +137,32 @@ const Home = ({ language }: HomeProps) => {
     { ...t.features.resources, icon: <BookOpen className="h-7 w-7 text-secondary" />, path: "/recursos" },
   ];
 
+  const seo = language === 'es'
+    ? { title: 'Guía Daltonismo Infantil | Para Padres y Escuelas', desc: 'Guía bilingüe sobre daltonismo infantil. Información, tests, ColorADD y recursos para padres, escuelas y niños.' }
+    : { title: 'Childhood Color Blindness Guide for Parents & Schools', desc: 'Bilingual guide to childhood color blindness. Info, tests, ColorADD and resources for parents, schools and children.' };
+
   return (
     <div className="min-h-screen">
+      <SEO
+        title={seo.title}
+        description={seo.desc}
+        path="/"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Guía Daltonismo Infantil",
+            url: "https://guiadaltonismo.lovable.app/",
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Guía Daltonismo Infantil",
+            url: "https://guiadaltonismo.lovable.app/",
+            inLanguage: ["es", "en"],
+          },
+        ]}
+      />
       <HeroSection 
         title={t.hero.title} 
         subtitle={t.hero.subtitle}
