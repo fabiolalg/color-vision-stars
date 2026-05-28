@@ -178,6 +178,19 @@ const ParaEscuelas = ({ language }: ParaEscuelasProps) => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title={language === 'es' ? 'Para Escuelas — Aulas Inclusivas y Daltonismo' : 'For Schools — Inclusive Classrooms & Color Blindness'}
+        description={language === 'es' ? 'Estrategias de enseñanza inclusiva, adaptación de materiales y recursos para estudiantes con daltonismo.' : 'Inclusive teaching strategies, material adaptations and resources for students with color blindness.'}
+        path="/para-escuelas"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: language === 'es' ? 'Guía para Escuelas sobre Daltonismo' : 'Schools Guide to Color Blindness',
+          inLanguage: language,
+          author: { "@type": "Organization", name: "Guía Daltonismo Infantil" },
+        }}
+      />
       <HeroSection 
         title={t.hero.title} 
         subtitle={t.hero.subtitle}

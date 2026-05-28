@@ -155,6 +155,11 @@ const Recursos = ({ language }: RecursosProps) => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title={language === 'es' ? 'Recursos sobre Daltonismo — Tests, ColorADD y Apps' : 'Color Blindness Resources — Tests, ColorADD & Apps'}
+        description={language === 'es' ? 'Enlaces útiles: tests Enchroma, ColorADD, simuladores, asociaciones y aplicaciones móviles.' : 'Useful links: Enchroma tests, ColorADD, simulators, associations and mobile apps.'}
+        path="/recursos"
+      />
       <HeroSection 
         title={t.hero.title} 
         subtitle={t.hero.subtitle}
