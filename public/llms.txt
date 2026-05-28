@@ -1,0 +1,11 @@
+# Guía Daltonismo Infantil
+
+> Guía bilingüe (ES/EN) sobre daltonismo infantil con información, recursos y apoyo para padres, escuelas y niños.
+
+## Pages
+
+- [Inicio](/): Introducción a la guía, estadísticas y secciones principales.
+- [Para Padres](/para-padres): Cómo detectar, entender y apoyar a un hijo con daltonismo.
+- [Para Escuelas](/para-escuelas): Estrategias de enseñanza inclusiva y adaptaciones educativas.
+- [Para Niños](/para-ninos): Contenido amigable diseñado para niños con daltonismo.
+- [Recursos](/recursos): Enlaces a tests, ColorADD, asociaciones y aplicaciones móviles.
