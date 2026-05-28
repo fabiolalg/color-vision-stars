@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import SEO from "@/components/SEO";
 import SectionCard from "@/components/SectionCard";
 import { BookOpen, ExternalLink } from "lucide-react";
 
