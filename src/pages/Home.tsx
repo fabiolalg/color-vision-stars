@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NextSection from "@/components/NextSection";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/HeroSection";
 import SectionCard from "@/components/SectionCard";
